@@ -1,0 +1,56 @@
+/* pricing-table.component.css */
+
+/* Customize the styles for the parent container */
+.sc-gsmgtr {
+    margin: 20px;
+    background-color: #f6f8fa;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Style the heading */
+  .sc-kLgntA {
+    font-size: 20px;
+    color: #2A293E;
+  }
+  
+  /* Style the pricing plan items */
+  .sc-cfRTaC {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #999999;
+  }
+  
+  /* Style the featured plan */
+  .sc-cfRTaC.featured-item {
+    background-color: #FF6F61;
+  }
+  
+  /* Style the status label */
+  .sc-gsTCUz {
+    font-size: 18px;
+    color: black;
+  }
+  
+  /* Style the price */
+  .sc-bqyKva {
+    font-size: 16px;
+    color: #2A293E;
+  }
+  
+  /* Style the discount label */
+  .sc-jSgupP {
+    color: #ffffff;
+    background-color: #FF6F61;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Add more styles as needed */
+  

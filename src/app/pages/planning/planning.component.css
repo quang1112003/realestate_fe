@@ -1,0 +1,280 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border: 1px solid #a2a2a8;
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Thêm dòng này để chia hàng ngang và căn lề trên */
+}
+
+.plan {
+    border: 1px solid rgb(0, 124, 128);
+    width: 160px;
+    height: 200px;
+    margin: 0 10px 20px; /* Thêm giảm margin phía dưới */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(145, 148, 240, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+.plan:hover {
+    box-shadow: 0 0 10px 0 black;
+    transition: background-color 0.2s linear;
+}
+
+.plan:active {
+    background-color: rgb(0, 124, 128);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(0, 124, 128);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(0, 124, 128);
+    color: #fff;
+}
+
+.btn:active {
+    background-color: rgb(0, 124, 128);
+    border-color:rgb(0, 124, 128);
+}
+.plan img {
+    width: 20px; /* Điều chỉnh chiều rộng của hình ảnh con mắt */
+    height: 20px; /* Điều chỉnh chiều cao của hình ảnh con mắt */
+    margin-right: 5px; /* Tạo khoảng cách giữa hình ảnh và văn bản */
+}
+.selected {
+    background-color: #fff; /* Màu xanh lá cây */
+    color: #000111; /* Màu văn bản trắng */
+}
+h6{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.form-group {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+.form-date{
+    width: 140px;
+    height: 40px;
+    border: 1px solid rgb(0, 124, 128);
+    margin-right: 10px; /* Loại bỏ margin mặc định của thẻ div */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.form-date.selected {
+    background-color: rgb(151, 238, 239);
+    color: #000;
+}
+.form-time{
+    padding: 20px 70px 50px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-ngay{
+    width: 300px;
+    height: 30px;
+    padding-right: 30px;
+}
+.form-gio{
+    width: 280px;
+    height: 30px;
+}
+.form-group h6 {
+    margin: 0; /* Loại bỏ margin mặc định của thẻ h6 */
+    padding: 10px; /* Tạo khoảng cách xung quanh nội dung */
+}
+.tienich {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border: 1px solid #a2a2a8;
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+    border-radius: 5px;
+}
+.push{
+    padding: 10px;
+}
+.automatic{
+    background-color: #F2F2F2;
+    padding-left: 50px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.automatic p{
+    font-size: 12px;
+    margin: 0px;
+}
+.automatic img {
+    width: 40px; /* Điều chỉnh chiều rộng của hình ảnh con mắt */
+    height: 40px; /* Điều chỉnh chiều cao của hình ảnh con mắt */
+    margin-right: 5px; /* Tạo khoảng cách giữa hình ảnh và văn bản */
+}
+.push-ngang{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.push-times{
+    border: 1px solid #a2a2a8;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.push-times:hover {
+    cursor: pointer;
+}
+
+.push-times.active {
+    background-color: #b8eeff;
+    color: #000111;
+}
+
+
+.muiten{
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.muiten img{
+    width: 25px; /* Điều chỉnh chiều rộng của hình ảnh con mắt */
+    height: 25px; /* Điều chỉnh chiều cao của hình ảnh con mắt */
+}
+.ttt{
+    display: flex;
+    flex-wrap: wrap;
+}
+.toggle {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.toggle input[type="checkbox"] {
+    display: none;
+}
+.toggle .slider {
+    background-color: #ccc;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    position: relative;
+    border-radius: 50px;
+}
+.toggle .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    border-radius: 50px;
+}
+.toggle input[type="checkbox"]:checked + .slider {
+    background-color: #07a787;
+}
+.toggle input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(26px);
+}
+.thanhtoan {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border: 1px solid #a2a2a8;
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+    border-radius: 5px;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+.container_button{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 800px;
+    margin: 15px auto;
+    background-color: #fff;
+    border: 1px solid #a2a2a8;
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+}
+
+
+.total-price {
+}
+
+.tongtien{
+    width: 300px ;
+    text-align: right;
+    padding-left: 100px;
+}
+.back {   height: 50px;
+    width: 200px;
+    margin: 10px 10px 10px 10px;
+    color: #795858;
+    padding: 10px 100px 0px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay {
+    height: 50px;
+    width: 250px;
+    margin: 10px 10px 10px 20px;
+}
+

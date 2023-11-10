@@ -1,0 +1,66 @@
+.selected {
+    color: red;
+    cursor: pointer;
+  }
+
+  .filter-box {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .filter-header {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .filter-select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px; /* Adjust the width as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .selected-option {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .filter-options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+    width: 150px; /* Match the width of the .filter-select element */
+  }
+  
+  .filter-options li {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .filter-options li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .filter-options.show-options {
+    display: block;
+  }
+  

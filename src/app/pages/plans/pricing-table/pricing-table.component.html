@@ -1,0 +1,32 @@
+<div class="sc-gsmgtr jKCEQo">
+    <h6 type="primary" class="sc-kLgntA hTMVPW">Chọn thời gian đăng tin</h6>
+    <div class="sc-jZiUfh kaFuyS">
+        <div type="primary" class="sc-dlfnbm lhekIy">Số ngày đăng</div>
+        <div class="sc-eGhOFI kqSCZx">
+            <div class="sc-cfRTaC bRdCgs" *ngFor="let plan of pricingPlans">
+                <div>
+                    <div type="primary" class="sc-gsTCUz bLoRcR">{{ plan.days }} ngày</div>
+                    <div type="primary" class="sc-bqyKva kNPgPf">{{ plan.price }} đ/ngày</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sc-bLituo fLJMNy">
+        <div class="sc-dlEPLJ sc-krtoiy fwWpWL ijeHNa" style="gap: 8px;">
+            <div type="primary" class="sc-dlfnbm lhekIy">Ngày bắt đầu</div>
+            <div id="start_date" class="sc-cAmlYy jJRrEL">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="date" class="form-control" #startDateInput (input)="updateEndDate()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="submitForm()">Submit</button>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datepicker').datepicker();
+    });
+   
+</script>

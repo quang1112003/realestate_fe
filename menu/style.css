@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#left-menu {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(237, 237, 237);
+  color: black;
+  padding: 20px;
+}
+
+#user-profile {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#user-profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 60%;
+}
+
+#user-profile p {
+  margin-top: auto;
+  padding-left: 15px;
+  color:black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#left-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#left-menu ul li {
+  margin-bottom: 10px;
+}
+
+#left-menu a {
+  text-decoration: none;
+  color:black;
+}
+
+
+.surplus{
+  padding: 10px 5px 10px 5px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 6px;
+}
+.surplu{
+  display: flex;
+  margin: 0px;
+  padding: 5px;
+}
+.surplu p{ 
+  font-family: Roboto;
+  color: rgb(80, 80, 80);
+  font-size: 16px;
+  font-weight:lighter;
+  margin: 0px 10px;
+}
+.nap{
+  margin-top: 20px;
+  width: 230px;
+  height: auto;
+  justify-content: center;
+}
+
+.click{
+  margin: 20px 0px 20px 0px;
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  background-color:rgb(237, 237, 237);
+  border: 1px black;
+}
+
+.click i{
+  font-size: 20px;
+  margin: 0;
+  padding:0px 30px 0px 10px;
+}
+.click:hover{
+  background-color: rgb(224, 221, 221);
+}
+#list-container li{
+  border-radius: 5px;
+  font-size: 14px;
+}
+.cuon {
+  overflow-y: auto; /* Hoặc sử dụng overflow-y: scroll; */
+  max-height: 400px; /* Đặt chiều cao tối đa của khối chứa để xem thanh cuộn xuất hiện */
+}

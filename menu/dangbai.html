@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fixed Left Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div id="left-menu">
+  <div id="user-profile">
+    <img src="img/minhjpg.jpg" alt="User Avatar">
+    <p>Minh Nguyễn</p>
+  </div>
+  <div class="surplus">
+    <div style="margin: 10px;">Số dư tài khoản</div>
+    <div class="surplu"><p>TK tin đăng</p> <div style="padding-left: 110px;">0</div></div>
+    <div class="surplu"><p>TK ngoài tin đăng</p> <div style="padding-left: 71px;">0</div></div>
+    <div class="surplu"><p>TK khuyến mãi </p> <div style="padding-left: 87px;">0</div></div> 
+    <button class="nap btn btn-outline-danger">Nạp tiền</button>
+  </div>
+<div class="cuon">
+  <div class="click" onclick="toggleList('list-container')"><i class="fa-solid fa-bars"></i>Quản lí tin đăng</div>
+  <div id="list-container" style="display: none;">
+      <ul class="list-group list-group-flush">
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Đăng Mới</a></li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Danh sách tin</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Tin nháp</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Danh sách tài trợ</li>
+      </ul>
+  </div>
+
+  <div class="click" onclick="toggleList('another-list-container')"><i class="fas fa-pie-chart"></i>Quản lý tài chính</div>
+  <div id="another-list-container" style="display: none;">
+    <ul class="list-group list-group-flush">
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Thông tin số dư</a></li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Lịch sử giao dịch</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Nạp tiền vào tài khoản</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Quản lí điểm tích lũy</li>
+      </ul>
+  </div>
+  <div class="click" onclick="toggleList('third-list-container')" style="font-size: 14px;"><i class="fa-solid fa-sitemap"></i>Quản lý TK Doanh nghiệp</div>
+  <div id="third-list-container" style="display: none;">
+    <ul class="list-group list-group-flush">
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Đăng kí tài khoản doanh nghiệp</a></li>
+      </ul>
+  </div>
+  <div class="click" onclick="toggleList('four-list-container')"><i class="fa-solid fa-cube"></i>Báo cáo & Hướng Dẫn</div>
+  <div id="four-list-container" style="display: none;">
+    <ul class="list-group list-group-flush">
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Báo giá</a></li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Hướng dẫn thanh toán</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Nạp tiền vào tài khoản</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Hướng dẫn sử dụng</li>
+      </ul>
+  </div>
+  <div class="click" onclick="toggleList('five-list-container')"><i class="fa-solid fa-gears"></i>Tiện ích</div>
+  <div id="five-list-container" style="display: none;">
+    <ul class="list-group list-group-flush">
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Thông báo</a></li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Quản lí đăng kí nhận email</li>
+        <li type="button" class="list-group-item list-group-item-action"><a href="#">Yêu cầu khóa tài khoản</li>
+      </ul>
+  </div>
+</div>
+
+<script>
+    function toggleList(listId) {
+      var listContainer = document.getElementById(listId);
+      listContainer.style.display = (listContainer.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

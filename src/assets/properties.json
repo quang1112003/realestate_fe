@@ -1,0 +1,26 @@
+{
+  "Properties":[
+    {
+      "image": "assets/img/banner1.jpg",
+      "tag": "For Rent",
+      "rooms": 5,
+      "beds": 2,
+      "baths": 3,
+      "sqFt": 1100,
+      "title": "Apartment Title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "price": 35000
+    },
+    {
+      "image": "assets/img/banner2.jpg",
+      "tag": "Sold Out",
+      "rooms": 4,
+      "beds": 2,
+      "baths": 2,
+      "sqFt": 900,
+      "title": "Apartment Title 2",
+      "description": "Another property description goes here.",
+      "price": 42000
+    }
+  ]
+}

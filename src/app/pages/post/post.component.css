@@ -1,0 +1,46 @@
+/* Add this CSS to your stylesheet */
+.aa-contact-form {
+    /* Add padding to the contact form */
+    padding: 30px; /* Adjust the padding as needed */
+    border-radius: 8px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the box shadow values as needed */
+  
+    margin: 0 auto; /* This centers the element horizontally */
+  }
+  .property-information-title {
+    color: #E03C31;
+    font-weight: 300;
+  }
+  .meter-square {
+    vertical-align: super;
+    font-size: 0.7em; /* Adjust the font size as needed */
+  }
+  
+  /* Optional: Add some spacing between "m" and "2" */
+  .meter-square sup {
+    margin-left: 2px; /* Adjust the margin as needed */
+  }
+  /* Add this CSS to your stylesheet */
+  .comment-form-price-currency {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-form-price {
+    flex: 1;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .comment-form-currency {
+    flex-basis: 110px; /* Adjust width as needed */
+  }
+  
+  .image-thumbnail {
+    max-width: 10px;
+    max-height: 10px;
+    margin: 5px;
+  }
+  
+  
+  

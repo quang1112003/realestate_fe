@@ -1,0 +1,206 @@
+<div id="left-menu">
+    <div id="user-profile">
+      <img src="img/minhjpg.jpg" alt="User Avatar">
+      <p>Minh Nguyễn</p>
+    </div>
+    <div class="surplus">
+      <div style="margin: 10px;">Số dư tài khoản</div>
+      <div class="surplu"><p>TK tin đăng</p> <div style="padding-left: 110px;">0</div></div>
+      <div class="surplu"><p>TK ngoài tin đăng</p> <div style="padding-left: 71px;">0</div></div>
+      <div class="surplu"><p>TK khuyến mãi </p> <div style="padding-left: 87px;">0</div></div> 
+      <button class="nap btn btn-outline-danger">Nạp tiền</button>
+    </div>
+  <div class="cuon">
+    <div class="click" onclick="toggleList('list-container')"><i class="fa-solid fa-bars"></i>Quản lí tin đăng</div>
+    <div id="list-container" style="display: none;">
+        <ul class="list-group list-group-flush">
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Đăng Mới</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Danh sách tin</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Tin nháp</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Danh sách tài trợ</a></li>
+        </ul>
+    </div>
+  
+    <div class="click" onclick="toggleList('another-list-container')"><i class="fas fa-pie-chart"></i>Quản lý tài chính</div>
+    <div id="another-list-container" style="display: none;">
+      <ul class="list-group list-group-flush">
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Thông tin số dư</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Lịch sử giao dịch</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Nạp tiền vào tài khoản</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Quản lí điểm tích lũy</a></li>
+        </ul>
+    </div>
+    <div class="click" onclick="toggleList('third-list-container')" style="font-size: 14px;"><i class="fa-solid fa-sitemap"></i>Quản lý TK Doanh nghiệp</div>
+    <div id="third-list-container" style="display: none;">
+      <ul class="list-group list-group-flush">
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Đăng kí tài khoản doanh nghiệp</a></li>
+        </ul>
+    </div>
+    <div class="click" onclick="toggleList('four-list-container')"><i class="fa-solid fa-cube"></i>Báo cáo & Hướng Dẫn</div>
+    <div id="four-list-container" style="display: none;">
+      <ul class="list-group list-group-flush">
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Báo giá</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Hướng dẫn thanh toán</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Nạp tiền vào tài khoản</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Hướng dẫn sử dụng</a></li>
+        </ul>
+    </div>
+    <div class="click" onclick="toggleList('five-list-container')"><i class="fa-solid fa-gears"></i>Tiện ích</div>
+    <div id="five-list-container" style="display: none;">
+      <ul class="list-group list-group-flush">
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Thông báo</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Quản lí đăng kí nhận email</a></li>
+          <li type="button" class="list-group-item list-group-item-action"><a href="#">Yêu cầu khóa tài khoản</a></li>
+        </ul>
+    </div>
+  </div>
+
+<div class="container" style="width: 800px">
+    <h3>Cấu hình tin đăng</h3>
+    <h6 class="planningtitle">Chọn loại tin đăng</h6>
+    <div class="plans">
+        <div class="plan" onclick="toggleSelection('selectButton1')">
+            <h2 style="font-size: 17px;">Tin thường</h2>
+            <p style="font-size: 12px;padding-bottom: 50px">Từ 2.160 đ/ngày</p>
+            <button class="btn" id="selectButton1" style="border: 2px solid rgb(0, 124, 128);">Chọn</button>        </div>
+        <div class="plan" onclick="toggleSelection('selectButton2')">
+            <h2 style="font-size: 17px;color: rgb(0, 124, 128)">VIP Bạc</h2>
+            <p style="font-size: 12px;margin: 0">Từ 49.050 đ/ngày</p>
+            <p class="d-inline"><img src="assets/img/planning/mat.png" alt="Lượt xem" class="img-fluid">x10</p>
+            <p>Lượt xem tin</p>
+            <button class="btn" id="selectButton2" style="border: 2px solid rgb(0, 124, 128);">Chọn</button>        </div>
+        <div class="plan" onclick="toggleSelection('selectButton3')">
+            <h2 style="font-size: 17px;color: #c4c44f">VIP Vàng</h2>
+            <p style="font-size: 12px;margin: 0">Từ 106.380 đ/ngày</p>
+            <p class="d-inline"><img src="assets/img/planning/mat.png" alt="Lượt xem" class="img-fluid">x20</p>
+            <p>Lượt xem tin</p>
+            <button class="btn" id="selectButton3" style="border: 2px solid rgb(0, 124, 128);">Chọn</button>        </div>
+        <div class="plan" onclick="toggleSelection('selectButton4')">
+            <h2 style="font-size: 15px;color: #de6581">VIP Kim Cương</h2>
+            <p style="font-size: 12px;margin: 0">Từ 200.000 đ/ngày</p>
+            <p class="d-inline"><img src="assets/img/planning/mat.png" alt="Lượt xem" class="img-fluid">x90</p>
+            <p>Lượt xem tin</p>
+            <button class="btn" id="selectButton4" style="border: 2px solid rgb(0, 124, 128);">Chọn</button>        </div>
+    </div>
+
+    <h6 style="padding-right: 500px">Chọn thời gian đăng tin</h6>
+    <h6 style="padding-right: 500px">Số ngày đăng</h6>
+    <div class="form-group">
+        <div class="form-date" onclick="selectDate(this)">
+            <h6>7 ngày</h6>
+        </div>
+        <div class="form-date" onclick="selectDate(this)">
+            <h6>10 ngày</h6>
+        </div>
+        <div class="form-date" onclick="selectDate(this)">
+            <h6>15 ngày</h6>
+        </div>    
+    </div>
+    <div class="form-time">
+        <div class="form-ngay">
+            <label for="start-date">Ngày bắt đầu</label>
+            <input type="date" name="start-date" id="start-date" class="form-control">
+        </div>
+        <div class="form-gio">
+            <label for="time-slot">Chọn khung giờ</label>
+            <select name="time-slot" id="time-slot" class="form-control">
+                <option value="7h00-11h00">7h00-11h00 </option>
+                <option value="11h00-15h00">11h00-15h00 </option>
+                <option value="15h00-19h00">15h00-19h00 </option>
+                <option value="19h00-23h00">19h00-23h00 </option>
+            </select>
+        </div>   
+        <div>
+            <label>
+
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="tienich">
+    <h3 style="padding: 20px 0px 20px 60px">Tiện ích</h3>
+    <div class="push">
+        <div class="automatic" >
+            <p class="icon-automatic"><img src="assets/img/planning/arrow.png"  class="img-push"></p>
+            <div>
+                <h4 style="margin: 0px">Gói đẩy tin tự động</h4>
+                <p>Tin sẽ được đẩy sau mỗi 24 tiếng.</p>
+                <p> Lần đẩy đầu tiên: Sau khi tin hiển thị 24 tiếng.</p>
+            </div>
+            <div class="push-ngang">
+                <div class="push-times" onclick="selectPushPackage(this)">
+                    <h5 style="margin: 0px; padding:10px 0px 0px 10px ; font-size: 18px">3 lần đẩy</h5>
+                    <div class="muiten">
+                        <img src="assets/img/planning/muiten.png"><p style="color: #28a745; font-size: 18px; margin: 0px;font-weight: bold">x3</p>
+                        <p style="padding: 2px;font-size: 15px;font-weight: bold">lượt xem</p>
+                    </div>
+                    <div class="ttt">
+                        <p style="padding:10px 15px 0px 10px;font-weight: bold; font-size: 16px">30.000 đ</p>
+                        <p style="font-style: italic;text-decoration:line-through;padding:10px 15px 0px 10px;color: #aeaca8;font-size: 16px">40.000</p>
+                    </div>
+                </div>
+                <div class="push-times" onclick="selectPushPackage(this)">
+                    <h5 style="margin: 0px; padding:10px 0px 0px 10px ; font-size: 18px">6 lần đẩy</h5>
+                    <div class="muiten">
+                        <img src="assets/img/planning/muiten.png"><p style="color: #28a745; font-size: 18px; margin: 0px;font-weight: bold">x6</p>
+                        <p style="padding: 2px;font-size: 15px;font-weight: bold">lượt xem</p>
+                    </div>
+                    <div class="ttt">
+                        <p style="padding:10px 15px 0px 10px;font-weight: bold; font-size: 16px">50.000 đ</p>
+                        <p style="font-style: italic;text-decoration:line-through;padding:10px 15px 0px 10px;color: #aeaca8;font-size: 16px">100.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="automatic">
+            <img src="assets/img/planning/resets.png">
+            <div>
+                <h4 style="margin: 0px">Tự động đăng lại</h4>
+                <p>Tin sẽ được đăng lại ngay khi tin vừa hết hạn. Mỗi lần đăng lại, hệ thống chỉ trừ tiền của lần đăng lại đó.</p>
+            </div>
+            <div style="padding: 20px 0px 0px 10px">
+                <label class="toggle" for="toggle">
+                    <input type="checkbox" id="toggle">
+                    <div class="slider"></div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<div class="thanhtoan">
+    <h3 style="padding: 20px 0px 20px 60px">Thanh toán</h3>
+    <div id="billTable" class="bill-table" style="margin-top: 20px;">
+        <table class="table table-borderless" >
+            <tbody>
+            <tr>
+                <td>Loại tin:</td>
+                <td id="type"></td>
+            </tr>
+            <tr>
+                <td>Đơn giá:</td>
+                <td id="price"></td>
+            </tr>
+            <tr>
+                <td>Số ngày đăng:</td>
+                <td id="days"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="container_button">
+    <div class="buttons">
+        <button class="back btn btn-outline-danger">Quay lại</button>
+        <div class="tongtien">
+        <div style="margin-right: 0px;">Tổng tiền:</div>
+        <div id="fee" style="font-weight: bold; color: #ff0000;">0 đ</div>
+        </div>
+        <button class="pay btn btn-outline-danger">Thanh toán </button>
+    </div>
+</div>
+
+
+
